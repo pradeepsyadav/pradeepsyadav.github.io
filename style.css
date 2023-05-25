@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(59, 59, 59);
+    color: wheat;
+    font-size: 18px;
+}
+
+.header-section {
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background-color: inherit;
+}
+
+.head-name {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 60px;
+}
+
+.head-summary {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.invisible {
+    display: none;
+}
+
+.head-ruler {
+    height: 5px;
+    background-color: wheat;
+    margin: auto;
+}
+
+.section-nav {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 10px 0;
+    flex-direction: row;
+}
+
+.section-nav li {
+    flex-grow: 1;
+    font-size: 22px;
+}
+
+.section-nav li:hover {
+    background-color: rgb(230, 208, 167);
+    color: #000000;
+    cursor: pointer;
+}
+
+.section-nav li a {
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    width: 100%;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-header {
+    font-size: 30px;
+}
+
+#aboutMe .section-header {
+    text-align: center;
+}
+
+.section-header::first-letter {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.section {
+    width: 90%;
+    margin: auto;
+}
+
+.main {
+    margin-top: 16px;
+}
+
+
+#profile-picture {
+    background-color: wheat;
+    border-radius: 50%;
+    width: 100%;
+}
+
+.respon {
+    display: block;
+}
+
+.left-side {
+    flex: 20%;
+}
+
+.right-side {
+    flex: 80%;
+}
+
+.section-content p.aboutme {
+    display: block;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+}
+
+.section-content {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.aboutsection {
+    display: flex;
+    align-items: center;
+}
+
+.aboutme ul {
+    display: inline;
+}
+
+.right-side {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contactsection {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-item {
+    background-color: wheat;
+    color: #000000;
+    padding: 10px 50px 10px 50px;
+    text-align: center;
+    border-radius: 6px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 1%;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    padding: 25px 0px;
+    overflow-x: scroll;
+}
+
+.projectcard {
+    padding: 10px;
+    flex: 0 0 100%;
+    border: 1px solid wheat;
+    border-radius: 12px;
+    flex-basis: calc(30% - 30px);
+}
+
+.projectcard:not(:last-child) {
+    margin-right: 10px;
+}
+
+.projectItemHeader * {
+    display: block;
+    width: 100%;
+}
+
+.projectItemHeader {
+    padding: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid wheat;
+}
+
+.projectItemDescription *, .projectcard .projectTitle {
+    margin: 0;
+}
+
+.projectItemDescription {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.projectTitle {
+    border-bottom: 2px solid wheat;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* MEDIA QUERIES properties */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .head-name {
+        font-size: 28px;
+    }
+    .head-summary {
+        font-size: 15px;
+    }
+
+    .section-nav li {
+        font-size: 15px;
+    }
+
+    .aboutsection {
+        flex-direction: column;
+    }
+
+    #profile-picture {
+        max-height: 200px;
+        max-width: 200px;
+    }
+
+    .projectcard {
+        flex-basis: 90%;
+    }
+
+    .contactsection {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        flex: 100%;
+        align-items: stretch;
+    }
+
+    .contact-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
