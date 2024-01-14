@@ -185,11 +185,12 @@ body {
     border: 1px solid wheat;
     border-radius: 12px;
     flex-basis: calc(30% - 30px);
-}
-
-.projectcard:not(:last-child) {
     margin-right: 10px;
 }
+
+/* .projectcard:not(:last-child) {
+    margin-right: 10px;
+} */
 
 .projectItemHeader * {
     display: block;
